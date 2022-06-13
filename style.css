@@ -1,0 +1,148 @@
+html{
+    box-sizing: border-box;
+}
+*, *:after, *:before{
+    box-sizing: inherit;
+}
+body{
+    margin: 0;
+    font-size: 18px;
+    line-height: 1.2;
+    color: rgb(27, 27, 27);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.header__logo{
+    width: 250px;
+    height: 200px;
+}
+h1,h2,h3,p,ul{
+    margin: 0;
+}
+ul{
+    padding: 0;
+    list-style: none;
+}
+button{
+    padding: 0;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    font: inherit;
+}
+input,button,textarea{
+    font: inherit;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+img{
+    display: block;
+    max-height: 100%;
+    height: auto;
+    width: 450px;
+    height: 300px;
+}
+.container{
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 72px;
+}
+.header{
+    padding: 20px 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    color: white;
+}
+.hero{
+    background-image: url(img/mainpizza.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 220px;
+    padding-bottom: 120px;
+    margin-bottom: 20px;
+}
+.header__container{
+    display: grid;
+    grid-template-columns: 3fr 6fr 3fr;
+    align-items: center;
+    gap: 15px;
+}
+.header__link{
+    justify-self: end;
+    transition: color 1s ease-in-out;
+}
+.header__link:hover{
+    color: rgb(175, 175, 175);
+}
+.nav__list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    gap: 30px;
+    transition:color 1s ease-in-out ;
+}
+.nav__list:hover{
+    color: rgb(38, 38, 38);
+}
+.nav__item:hover{
+    color: rgb(255, 255, 255);
+}
+.hero__title{
+    font-weight: 700px;
+    font-size: 100px;
+    line-height: 1;
+    color: aliceblue;
+    margin-bottom: 15px;
+}
+.hero__btn{
+    width: 300px;
+    height: 80px;
+    padding: 14px 30px;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    outline: none;
+    font-size: 30px;
+    color: rgb(138, 138, 138);
+    background-color: aliceblue;
+    transition: background-color 0.3s;
+}
+.hero__btn:hover{
+    background-color: beige;
+}
+.hero__btn:focus{
+    border-color: bisque;
+}
+.hero__btn:active{
+    background-color: rgb(255, 255, 255);
+}
+.product{
+    padding: 60px 0;
+}
+.product__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+.product:nth-child(odd) .product__container{
+    flex-direction: row-reverse;
+}
+.product__title{
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 1;
+    margin-bottom: 20px;
+}
+.product__text{
+    line-height: 20px;
+    margin-bottom: 50px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 5;
+}
