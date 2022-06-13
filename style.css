@@ -146,3 +146,51 @@ img{
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 5;
 }
+.product__btn{
+    width: 300px;
+    height: 80px;
+    padding: 14px 30px;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    outline: none;
+    font-size: 30px;
+    color: rgb(138, 138, 138);
+    background-color: aliceblue;
+    transition: background-color 0.3s;
+}
+.product__btn:hover{
+    background-color: beige;
+}
+.product__btn:focus{
+    border-color: bisque;
+}
+.product__btn:active{
+    background-color: rgb(255, 255, 255);
+}
+.contacts__list{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+.contacts__title{
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 100%;
+}
+.footer{
+    background-color: black;
+    margin-top: 90px;
+    justify-content: center;
+    display: flex;
+}
+.footer__logo{
+    width: 250px;
+    height: 150px;
+}
+.footer__list{
+    color: rgb(147, 147, 147);
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+    margin-left: 15px;
+}
